@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Vacation Planner</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="/static/spellwell/spellwell.css">
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <h1>Vacation Planner</h1>
+    <button id="new-trip">+ New trip</button>
+    <h2>Parking lot</h2>
+    <div id="parking-lot"></div>
+    <h2>Calendars</h2>
+    <div id="calendar-toggles" class="muted">No calendars connected yet — see docs/integrations.md</div>
+    <div id="hints" class="muted">
+      Drag a trip onto the calendar to place it.<br>
+      Drag a placed trip to move it. Tab cycles its allowed lengths.<br>
+      Del unplaces. Esc deselects.
+    </div>
+  </aside>
+  <main id="calendar">
+    <div id="timeline"></div>
+  </main>
+  <aside id="details" class="hidden">
+    <h2 id="details-title"></h2>
+    <form id="trip-form">
+      <label>Title <input name="title" required></label>
+      <label>Status
+        <select name="status">
+          <option>ideation</option><option>planned</option>
+          <option>booked</option><option>rejected</option>
+        </select>
+      </label>
+      <label>Destinations (one per line) <textarea name="destinations" rows="2"></textarea></label>
+      <label>Allowed lengths, days (comma-sep) <input name="lengths" placeholder="7, 14, 21"></label>
+      <label>Preferred windows (MM-DD to MM-DD, one per line)
+        <textarea name="seasons" rows="2" placeholder="03-20 to 04-15 cherry blossom"></textarea></label>
+      <label>Notes <textarea name="notes" rows="6"></textarea></label>
+      <div class="form-row">
+        <button type="submit">Save</button>
+        <button type="button" id="unplace-trip">Unplace</button>
+        <button type="button" id="delete-trip" class="danger">Delete</button>
+      </div>
+    </form>
+  </aside>
+</div>
+<script src="/static/spellwell/vendor/typo/typo.min.js"></script>
+<script src="/static/spellwell/spellwell.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

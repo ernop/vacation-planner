@@ -1,0 +1,44 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; font: 14px/1.4 system-ui, sans-serif; background: #fafaf7; color: #222; }
+
+#app { display: flex; height: 100vh; }
+
+#sidebar { width: 230px; flex: none; padding: 12px; border-right: 1px solid #ddd; background: #f2f2ec; overflow-y: auto; }
+#sidebar h1 { font-size: 16px; margin: 0 0 10px; }
+#sidebar h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: #777; margin: 18px 0 6px; }
+#new-trip { width: 100%; padding: 6px; }
+.muted { color: #999; font-size: 12px; }
+#hints { margin-top: 24px; }
+
+#calendar { flex: 1; overflow-x: auto; overflow-y: hidden; position: relative; }
+#timeline { position: relative; height: 100%; }
+
+.month { position: absolute; top: 0; bottom: 0; border-left: 1px solid #e0e0d8; }
+.month-label { position: sticky; top: 0; font-size: 12px; color: #666; padding: 4px 6px; white-space: nowrap; }
+.month:nth-child(odd) { background: #f6f6f0; }
+.day-tick { position: absolute; top: 28px; bottom: 0; border-left: 1px solid #eee; }
+.today-line { position: absolute; top: 0; bottom: 0; width: 2px; background: #d33; z-index: 3; }
+
+.season-band { position: absolute; top: 28px; bottom: 0; background: rgba(120, 190, 120, .18); z-index: 1; }
+
+.trip-bar { position: absolute; height: 34px; border-radius: 6px; padding: 4px 8px; cursor: grab;
+  background: #4a7db8; color: #fff; overflow: hidden; white-space: nowrap; z-index: 4;
+  box-shadow: 0 1px 2px rgba(0,0,0,.25); user-select: none; }
+.trip-bar .len { opacity: .75; font-size: 11px; margin-left: 6px; }
+.trip-bar.ideation { background: rgba(74, 125, 184, .55); border: 1px dashed #4a7db8; }
+.trip-bar.booked { background: #2e7d4f; }
+.trip-bar.rejected { background: #999; }
+.trip-bar.selected { outline: 3px solid #f5a623; }
+.trip-bar.conflict { outline: 3px solid #d33; }
+.trip-bar.dragging { opacity: .8; cursor: grabbing; z-index: 10; }
+
+.parked-trip { padding: 6px 8px; margin: 4px 0; background: #fff; border: 1px dashed #aaa;
+  border-radius: 6px; cursor: grab; user-select: none; }
+.parked-trip.rejected { color: #999; text-decoration: line-through; }
+
+#details { width: 300px; flex: none; padding: 12px; border-left: 1px solid #ddd; background: #f2f2ec; overflow-y: auto; }
+#details.hidden { display: none; }
+#details label { display: block; margin: 8px 0; font-size: 12px; color: #555; }
+#details input, #details textarea, #details select { width: 100%; font: inherit; padding: 4px; }
+.form-row { display: flex; gap: 6px; margin-top: 10px; }
+.danger { color: #a00; }
