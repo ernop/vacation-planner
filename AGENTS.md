@@ -66,7 +66,8 @@ Mirrored from `~/proj/mybrowser/AGENTS.md` (canonical: `mybrowser/.cursor/rules/
 - Present alternatives as terse labeled options, not padded conditional prose.
 - Don't over-offer follow-up actions: do the task, report, stop. Do obvious
   housekeeping (doc updates after a change) without asking.
-- Self-check drafts against `mybrowser/utilities/prose-lint.sh`.
+- Check drafts against these rules by reading them; replies are not run
+  through a tool.
 
 ## Layout
 
