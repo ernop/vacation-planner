@@ -26,7 +26,7 @@ what puts the app on the homepage.
 - Result: `http://vacation-planner.localhost` → `127.0.0.1:8003`.
 
 Any change here is a local-system change: record it in mybrowser (commit) per
-the standing rule in `~/proj/agents.md`.
+the standing rule in `~/proj/AGENTS.md`.
 
 ## Calendars (his + hers)
 

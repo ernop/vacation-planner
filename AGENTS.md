@@ -44,7 +44,7 @@ new files in the table above.
 - Config goes in gitignored files, not env vars.
 - No try/except fallbacks or retry loops — fix the single upstream source.
 - Record any local-system change (Caddy config, systemd, ports) in
-  `~/proj/mybrowser/` per the standing rule in `~/proj/agents.md`, and mirror
+  `~/proj/mybrowser/` per the standing rule in `~/proj/AGENTS.md`, and mirror
   the app-side facts in [docs/integrations.md](docs/integrations.md).
 
 ## Writing conventions for agents
