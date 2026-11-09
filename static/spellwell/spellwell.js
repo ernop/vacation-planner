@@ -2,7 +2,7 @@
 // fixes for any <textarea>, no build step, no server, no framework.
 //
 // Origin: grown out of the fuseki4_ai article-editor prototype (typo-js +
-// Hunspell en_US + localStorage custom dictionary) and the stalin-mode.html
+// Hunspell en_US + localStorage custom dictionary) and the win95-mode
 // screenshot editor; packaged here so it can be copied into any project as a
 // folder (spellwell.js + spellwell.css + vendor/typo/{typo.min.js,en_US.aff,
 // en_US.dic}).

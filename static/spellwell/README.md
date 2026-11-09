@@ -6,7 +6,7 @@ component: copy this folder into any project and serve it as static files.
 
 Grown out of two earlier prototypes: the fuseki4_ai article editor (typo-js +
 Hunspell en_US + localStorage custom dictionary, sidebar suggestion UI) and
-stalin-mode.html (screenshot editor that only had the browser's native
+the win95-mode page (screenshot editor that only had the browser's native
 squiggles). SpellWell replaces the browser's red squiggles with block
 highlights:
 
